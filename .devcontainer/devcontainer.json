@@ -1,0 +1,12 @@
+{
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "web",
+    "workspaceFolder": "/home/node",
+    "remoteUser": "node",
+    "customizations": {
+      "vscode": {
+        "extensions": ["esbenp.prettier-vscode", "Vue.volar", "slevesque.shader"]
+      }
+    }
+  }
+  

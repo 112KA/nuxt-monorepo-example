@@ -1,0 +1,23 @@
+{
+  "name": "@112ka/example-base-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/module",
+  "module": "dist/module",
+  "esnext": "dist/module",
+  "types": "dist/module",
+  "scripts": {
+    "build": "pnpm clean && pnpm compile:source && pnpm copy:asset",
+    "clean": "rimraf dist && rimraf tsconfig.build.tsbuildinfo",
+    "copy:asset": "cd src && copyfiles \"components/**/**\" \"css/**/**\" \"layouts/**/**\" \"middleware/**/**\" \"pages/**/**\" \"plugins/**/**\" ../dist",
+    "compile:source": "tsc -b tsconfig.build.json",
+    "watch:source": "tsc -b tsconfig.build.json -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/112ka/example-base-project.git",
+    "directory": "base-project"
+  },
+  "keywords": [],
+  "author": "Masayuki Iizuka <mas.iizuka@gmail.com>"
+}

@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./.devcontainer/Dockerfile
+    container_name: example-monorepo-container
+    volumes:
+      - .:/home/node:cached
+      - node_modules_monorepo_example_root:/home/node/node_modules
+      - node_modules_monorepo_example_a:/home/node/projects/a/node_modules
+      - node_modules_monorepo_example_b:/home/node/projects/b/node_modules
+    tty: true
+    environment:
+      # - LOCAL_UID=9002
+      # - LOCAL_GID=9002
+      - HOST=0.0.0.0
+      - CHOKIDAR_USEPOLLING=true
+    ports:
+      - 3000:3000
+      - 24678:24678 # HMR用のポートを追加
+volumes:
+  node_modules_monorepo_example_root:
+  node_modules_monorepo_example_a:
+  node_modules_monorepo_example_b:

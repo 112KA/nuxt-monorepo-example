@@ -1,0 +1,10 @@
+node_modules
+dist
+.cache
+.dotnet
+.local
+.npm
+.vscode-server
+.npmrc
+*.tsbuildinfo
+*_history

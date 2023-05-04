@@ -1,0 +1,16 @@
+{
+  "name": "@112ka/example-a",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "base-project": "workspace:@112ka/example-base-project@*"
+  },
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-monorepo-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -b ./tsconfig.watch.json -w",
+    "build": "pnpm --filter './packages/**' build",
+    "build:source": "tsc -b ./tsconfig.watch.json --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "copyfiles": "^2.4.1",
+    "nuxt": "^3.4.3",
+    "rimraf": "^5.0.0",
+    "sass": "^1.62.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.9"
+  }
+}
