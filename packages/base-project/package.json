@@ -13,6 +13,10 @@
     "compile:source": "tsc -b tsconfig.build.json",
     "watch:source": "tsc -b tsconfig.build.json -w"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/112ka/example-base-project.git",

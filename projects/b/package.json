@@ -9,7 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "base-project": "workspace:@112ka/example-base-project@*"
+    "base-project": "npm:@112ka/example-base-project@1.0.0"
   },
   "devDependencies": {
   }

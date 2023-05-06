@@ -1,16 +1,15 @@
 {
-    "extends": "./tsconfig.build.json",
-  
-    "compilerOptions": {
-      "composite": true,
-      "outDir": "./.temp/"
-    },
-  
-    "references": [
-      {
-        "path": "packages/base-project/tsconfig.build.json"
-      }
-    ],
-    "include": []
-  }
-  
+  "extends": "./tsconfig.build.json",
+
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "./.temp/"
+  },
+
+  "references": [
+    {
+      "path": "packages/base-project/tsconfig.build.json"
+    }
+  ],
+  "include": []
+}

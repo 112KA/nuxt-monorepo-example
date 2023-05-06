@@ -38,7 +38,7 @@ importers:
   projects/b:
     dependencies:
       base-project:
-        specifier: workspace:@112ka/example-base-project@*
+        specifier: npm:@112ka/example-base-project@1.0.0
         version: link:../../packages/base-project
 
 packages:

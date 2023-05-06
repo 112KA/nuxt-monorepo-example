@@ -1,6 +1,0 @@
-[safe]
-	directory = %(prefix)///wsl.localhost/Ubuntu/home/iizuka/QuriosField_web
-	directory = %(prefix)///wsl.localhost/Ubuntu/home/iizuka/QuriosField_web
-	directory = %(prefix)///wsl.localhost/Ubuntu/home/iizuka/QuriosField_web
-[credential]
-	helper = "!f() { /home/node/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node /tmp/vscode-remote-containers-208922bd-1810-44f5-b6eb-2bb18418b135.js git-credential-helper $*; }; f"

@@ -1,4 +1,3 @@
 shamefully-hoist=true
 git-checks=false
-@112KA:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=%%PERSONAL_ACCESS_TOKEN%%
