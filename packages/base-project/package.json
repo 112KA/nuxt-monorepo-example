@@ -1,6 +1,6 @@
 {
   "name": "@112ka/example-base-project",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/module",
   "module": "dist/module",
@@ -11,7 +11,8 @@
     "clean": "rimraf dist && rimraf tsconfig.build.tsbuildinfo",
     "copy:asset": "cd src && copyfiles \"components/**/**\" \"css/**/**\" \"layouts/**/**\" \"middleware/**/**\" \"pages/**/**\" \"plugins/**/**\" ../dist",
     "compile:source": "tsc -b tsconfig.build.json",
-    "watch:source": "tsc -b tsconfig.build.json -w"
+    "watch:source": "tsc -b tsconfig.build.json -w",
+    "postinstall": "nuxt prepare"
   },
   "publishConfig": {
     "access": "public",

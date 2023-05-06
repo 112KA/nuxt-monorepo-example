@@ -5,6 +5,7 @@ dist
 .gitconfig
 .local
 .npm
+.nuxt
 .vscode-server
 .npmrc
 *.tsbuildinfo

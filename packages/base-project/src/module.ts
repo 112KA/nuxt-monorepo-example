@@ -3,9 +3,7 @@ import type { NuxtModule } from '@nuxt/schema'
 
 const module: NuxtModule = defineNuxtModule({
   setup(_, nuxt) {
-
     const { resolve } = createResolver(import.meta.url)
-
 
     // ----- 共通components
     nuxt.hook('components:dirs', (dirs) => {
@@ -14,22 +12,16 @@ const module: NuxtModule = defineNuxtModule({
       })
     })
 
-
     // ----- 共通pages
     extendPages((pages) => {
-      pages.unshift(
-        { name: 'second', path: '/second/', file: resolve('pages/second.vue') },
-      )
+      pages.unshift({ name: 'second', path: '/second/', file: resolve('pages/second.vue') })
     })
-
 
     // ----- 共通middleware
     addRouteMiddleware({ name: 'name', path: resolve('middleware/redirect.global.js'), global: true })
 
-
     // ----- 共通plugin
     addPlugin(resolve('plugins/examplePlugin.js'))
-
 
     // ----- 共通css
     //NOTE: nuxt.config.tsで未定義だったらファイル追加

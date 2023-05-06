@@ -39,9 +39,14 @@ importers:
     dependencies:
       base-project:
         specifier: npm:@112ka/example-base-project@1.0.0
-        version: link:../../packages/base-project
+        version: /@112ka/example-base-project@1.0.0
 
 packages:
+
+  /@112ka/example-base-project@1.0.0:
+    resolution: {integrity: sha512-YkC2P8Rp8LZGyMPTQIEuDy2KTKyErV+2kNwX1lJ+wjYYufpxfT0f7qBCtEiGmD/zvRvuopgG61BLWt1G5m1QEA==, tarball: https://npm.pkg.github.com/download/@112ka/example-base-project/1.0.0/3b1e85a47544bcb4229d5e883491c42a228f3e4f}
+    requiresBuild: true
+    dev: false
 
   /@ampproject/remapping@2.2.1:
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}
