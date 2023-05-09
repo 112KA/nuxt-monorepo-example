@@ -7,7 +7,7 @@ const module: NuxtModule = defineNuxtModule({
 
     // ----- 共通components
     nuxt.hook('components:dirs', (dirs) => {
-      dirs.unshift({
+      dirs.push({
         path: resolve('components'),
       })
     })
