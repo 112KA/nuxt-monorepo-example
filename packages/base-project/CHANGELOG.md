@@ -4,4 +4,10 @@
 
 ### Patch Changes
 
-- update patch version
+- patch version up
+
+## 1.0.0
+
+### Major Changes
+
+- initial

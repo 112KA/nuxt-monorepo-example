@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -44,8 +48,7 @@ importers:
 packages:
 
   /@112ka/example-base-project@1.0.0:
-    resolution: {integrity: sha512-YkC2P8Rp8LZGyMPTQIEuDy2KTKyErV+2kNwX1lJ+wjYYufpxfT0f7qBCtEiGmD/zvRvuopgG61BLWt1G5m1QEA==, tarball: https://npm.pkg.github.com/download/@112ka/example-base-project/1.0.0/3b1e85a47544bcb4229d5e883491c42a228f3e4f}
-    requiresBuild: true
+    resolution: {integrity: sha512-gxqXoQaco0ytNaE+xFx6/rk74eQ/baoFaDQPOBWIxpBAJvtf3ZwuQg5xVWy/VaPovBaZ3cvC1V5nmyle86P+XA==, tarball: https://npm.pkg.github.com/download/@112ka/example-base-project/1.0.0/6786c140c035bdc0c0dde8156b920d65b3a3decd}
     dev: false
 
   /@ampproject/remapping@2.2.1:

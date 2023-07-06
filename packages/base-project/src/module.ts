@@ -18,7 +18,7 @@ const module: NuxtModule = defineNuxtModule({
     })
 
     // ----- 共通middleware
-    addRouteMiddleware({ name: 'name', path: resolve('middleware/redirect.global.js'), global: true }, { overwrite: false })
+    addRouteMiddleware({ name: 'name', path: resolve('middleware/redirect.global.js'), global: true }, { override: false })
 
     // ----- 共通plugin
     addPlugin(resolve('plugins/examplePlugin.js'))

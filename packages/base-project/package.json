@@ -11,12 +11,7 @@
     "clean": "rimraf dist && rimraf tsconfig.build.tsbuildinfo",
     "copy:asset": "cd src && copyfiles \"components/**/**\" \"css/**/**\" \"layouts/**/**\" \"middleware/**/**\" \"pages/**/**\" \"plugins/**/**\" ../dist",
     "compile:source": "tsc -b tsconfig.build.json",
-    "watch:source": "tsc -b tsconfig.build.json -w",
-    "postinstall": "nuxt prepare"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "watch:source": "tsc -b tsconfig.build.json -w"
   },
   "repository": {
     "type": "git",
